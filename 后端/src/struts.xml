@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd"> 
+<struts>
+<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+<constant name="struts.devMode" value="true"></constant>
+<package name="study" namespace="" extends="struts-default">
+       <global-results>
+       <result name="success">/WEB-INF/page/success.jsp</result>
+       </global-results>
+       <global-allowed-methods>regex:.*</global-allowed-methods>
+		<action name="Login" class="com.LoginAction"></action>
+		<action name="Search" class="com.SearchAction"></action>
+		<action name="Register" class="com.RegistAction"></action>
+		<action name="Recommend" class="com.RecomAction"></action>
+		<action name="addHot" class="com.addHotAction"></action>
+		<action name="Rate" class="com.RateAction"></action>
+		<action name="getRate" class="com.getRateAction"></action>
+		<action name="MainAction" class="com.MainAction">
+		     <result name="login" type="chain">Login</result>
+		     <result name="search" type="chain">Search</result>
+		     <result name="register" type="chain">Register</result>
+		     <result name="recommend" type="chain">Recommend</result>
+		     <result name="addHot" type="chain">addHot</result>
+		      <result name="rate" type="chain">Rate</result>
+		      <result name="getRate" type="chain">getRate</result>
+		</action>
+	</package>
+</struts>

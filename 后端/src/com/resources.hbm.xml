@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com">
+    <!-- 
+        name：即实体类的全名
+        table：映射到数据库里面的那个表的名称
+        catalog：数据库的名称
+     -->
+    <class name="Resources" table="resources">
+        <!-- class下必须要有一个id的子元素 -->
+        <!-- id是用于描述主键的 -->
+        <id name="bookId" column="bookId" type="integer">
+            <!-- 主键生成策略 -->
+            <generator class="native"></generator>
+        </id>
+        <property name="bookName" column="bookName" type="string"></property>
+        <property name="author" column="author" type="string"></property>
+        <property name="description" column="description" type="string"></property>
+        <property name="keywords" column="keywords" type="string"></property>
+        <property name="ISBN" column="ISBN" type="string"></property>
+        <property name="url" column="url" type="string"></property>
+        <property name="category" column="category" type="string"></property>
+        <property name="img" column="img" type="string"></property>
+        <property name="publisher" column="publisher" type="string"></property>
+        <property name="hot" column="hot" type="integer"></property>
+    </class>
+</hibernate-mapping> 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="referrer" content="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/star-rating.min.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+
+
+</head>
+<body>
+<!--导航栏-->
+<nav class="nav navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand"><span class="glyphicon glyphicon-book"></span>  智能图书推荐系统</a>
+
+    </div>
+    <ul class="nav navbar-nav pull-right">
+        <li><a href="#"  onclick="logout()"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="row middle-box center">
+        <div class="col-md-8 col-sm-8 col-xs-8 col-md-offset-1 col-sm-offset-1 col-xs-offset-1"><input id="content" name="content" class="form-control" type="text" placeholder="搜索一本图书.."></div>
+        <div class="col-md-2 col-sm-2  col-xs-2"><button class="btn btn-primary" type="button" onclick="search()">搜索</button></div>
+    </div>
+    <div class="recommend row">
+        <label><span class="glyphicon glyphicon-heart"></span> 猜你喜欢</label>
+    </div>
+</div>
+
+
+<!--书籍详细信息模态框-->
+<div class="modal fade" id="detail">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">图书详情</h4>
+            </div>
+            <div class="modal-body">
+                <div class="detail center">
+                    <div class="row">
+                        <div class="col-sm-5"><img id="img"></div>
+                        <div class="row col-sm-7">
+                            <!--<label>ISBN</label><h5 id="ISBN"></h5>-->
+                            <!--<hr width="100%">-->
+                            <label>图书名称</label><h5 id="name"></h5>
+                            <hr width="100%">
+                            <label>作者</label><h5 id="author"></h5>
+                            <hr width="100%">
+                            <label>出版社</label><h5 id="publisher"></h5>
+                            <hr width="100%">
+                            <label>评分</label>
+                            <input id="rate" class="rating rating-sm" type="text" >
+                        </div>
+                    </div>
+                    <div class="row">
+                           <textarea class="form-control" id="description">描述</textarea>
+                    </div>
+                    <div class="row">
+                        <button type="button" data-toggle="modal" data-target="#detail" class="btn btn-default pull-right">关闭</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/index.js"></script>
+<script src="js/cleanCookie.js"></script>
+<script src="js/star-rating.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+
+</body>
+</html>

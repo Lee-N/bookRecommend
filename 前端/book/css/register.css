@@ -1,0 +1,10 @@
+.area{
+    border: 2px solid #EBEBEB;
+    height: 150px
+}
+.hobbies label,.area label{
+    color: white!important;
+    cursor: pointer;
+    margin-right: 1%;
+    margin-left: 1%;
+}

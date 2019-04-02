@@ -1,0 +1,40 @@
+.middle-box{
+    margin: 0 0;
+    max-width: 600px;
+}
+.books .row{
+    height: 140px;
+    margin-bottom: 20px;
+}
+.books img{
+    width: 100%;
+    height: 140px;
+}
+.books hr{
+    margin: 10px auto;
+}
+.detail{
+    margin: 0 10px;
+}
+
+.detail hr{
+    margin: 5px 0;
+}
+
+.detail img{
+    width: 100%;
+}
+
+.detail textarea{
+    height: 150px;
+}
+
+.detail .row{
+    margin-bottom: 10px;
+}
+.detail h5{
+    margin:6px auto ;
+}
+.book{
+    cursor: pointer;
+}

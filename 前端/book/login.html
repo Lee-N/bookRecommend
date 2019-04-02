@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+</head>
+<body>
+<!--导航栏-->
+<nav class="nav navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand"><span class="glyphicon glyphicon-book"></span>  智能图书推荐系统</a>
+    </div>
+     <ul class="nav navbar-nav pull-right">
+         <li><a href="#" ><span class="glyphicon glyphicon-log-out"></span>退出</a></li>
+     </ul>
+</nav>
+
+<!--登录表单-->
+<div class="container middle-box center" align="center">
+    <h2 class="col-md-offset-2">用户登录</h2>
+    <form id="form" role="form" class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-3">用户名:</label>
+            <div class="col-md-9"><input class="form-control" id="username" name="username" required></div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">密码:</label>
+            <div class="col-md-9"><input class="form-control" id="password" name="password" type="password" required></div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary col-md-offset-2" type="button" onclick="login()">登录</button>
+        </div>
+        <div class="form-group">
+            <a href="register.html" class="col-md-offset-2 ">还没有账号?点击注册</a>
+        </div>
+    </form>
+
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/login.js"></script>
+<script src="js/validate/jquery.validate.min.js"></script>
+<script src="js/validate/messages_zh.min.js"></script>
+<script src="js/cleanCookie.js"></script>
+<script src="js/sweetalert.min.js"></script>
+</body>
+</html>

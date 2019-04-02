@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+
+</head>
+<body>
+<!--导航栏-->
+<nav class="nav navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand"><span class="glyphicon glyphicon-book"></span>  智能图书推荐系统</a>
+    </div>
+    <ul class="nav navbar-nav pull-right">
+        <li><a href="login.html" ><span class="glyphicon glyphicon-log-out"></span>退出</a></li>
+    </ul>
+</nav>
+
+<!--用户注册表单-->
+<div class="container middle-box center" align="center">
+    <h2 class="col-md-offset-2">用户注册</h2>
+    <form id="form" role="form" class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-md-3">昵称:</label>
+            <div class="col-md-9"><input class="form-control" id="name" name="name" required></div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">用户名:</label>
+            <div class="col-md-9"><input class="form-control" id="username" name="username" required></div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">密码:</label>
+            <div class="col-md-9"><input class="form-control" id="password" name="password" type="password" required></div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">确认密码:</label>
+            <div class="col-md-9"><input class="form-control" id="confirm" name="confirm" type="password" required></div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">爱好:</label>
+            <div class="col-md-9" >
+                <div class="area" id="area"> </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-11 col-md-offset-2 hobbies">
+                <label class="label-primary">&emsp;#三国&emsp;</label>
+                <label class="label-primary">&emsp;#文学&emsp;</label>
+                <label class="label-primary">&emsp;#故事&emsp;</label>
+                <label class="label-primary">&emsp;#小说&emsp;</label>
+                <label class="label-primary">&emsp;#散文&emsp;</label>
+                <label class="label-primary">&emsp;#村上春树&emsp;</label>
+                <label class="label-primary">&emsp;#三毛&emsp;</label>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary col-md-offset-3" type="button" onclick="register()">注册</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/url.js"></script>
+<script src="js/register.js"></script>
+<script src="js/validate/jquery.validate.min.js"></script>
+<script src="js/validate/messages_zh.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+</body>
+</html>
