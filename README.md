@@ -3,7 +3,7 @@
 ### 前端：
    框架：
    - jquery
-   - bootstrap
+   - bootstrap  
    插件：
    - jquery-Validate
    - bootstrap-staring-rating
